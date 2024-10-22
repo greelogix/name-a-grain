@@ -1,0 +1,205 @@
+body {
+  margin: 0px !important;
+}
+.row {
+  --bs-gutter-x: 0 !important;
+}
+.kefa-fs {
+  font-family: "Kefa", "Merriweather", serif;
+}
+.inter-fs {
+  font-family: "Inter", sans-serif;
+}
+.time-roman-fs {
+  font-family: "Times New Roman", "Georgia", serif;
+}
+.responsive-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/ed.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-nav {
+  height: 75px;
+  background-color: #00000096;
+}
+.top-nav div {
+  color: white;
+}
+.pearls-container {
+  margin-top: -50px !important;
+  background-color: #00000026;
+  position: relative;
+  z-index: 2;
+}
+.pearls-img {
+  max-width: 100%;
+  height: auto;
+}
+.product-img {
+  max-width: 100%;
+  height: auto;
+}
+.certificate-img {
+  max-width: 100%;
+  height: auto;
+}
+.mehron-color {
+  color: rgba(98, 20, 14, 1);
+}
+.mehron-bg {
+  background-color: #4d080c !important;
+}
+.fs-text {
+  font-size: clamp(11px, 5vw, 18px) !important;
+}
+.yelllow-border {
+  border: 6px solid #f6cd49 !important;
+  color: #c3812f !important;
+}
+.fs-btn-text {
+  font-size: clamp(11px, 5vw, 25px) !important;
+}
+.product-container {
+  border: 2px solid #5a4127;
+  border-radius: 12px;
+  padding: 14px;
+}
+.simpson-container {
+  width: 100%;
+  background-image: url("../assets/Shells.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.arro-icon {
+  font-size: 8vw;
+  color: white;
+}
+.simp-img {
+  width: 40%;
+  height: auto;
+}
+.fs-simpson-head {
+  font-size: clamp(11px, 5vw, 23px);
+}
+.fs-simpson-text {
+  font-size: clamp(11px, 5vw, 18px);
+}
+.fs-banner-head {
+  font-size: clamp(11px, 5vw, 58px);
+}
+.fs-head-text {
+  font-size: clamp(11px, 5vw, 14px);
+}
+.tv-img {
+  max-width: 100%;
+  height: auto;
+}
+.tv-img-container {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #5a4127;
+  border-radius: 15px;
+}
+.sub-footer {
+  background-color: #5a4127;
+}
+.title-img {
+  max-width: 305px;
+  height: 139px;
+}
+.footer-img {
+  max-width: 50%;
+  height: auto;
+}
+.social-icons {
+  width: 45px;
+  height: 45px;
+}
+.top-img-text {
+  max-width: 50%;
+  height: auto;
+}
+/* .pearls::before {
+  content: url("./assets/Sample Ceritificate.png");
+  display: block;
+  width: 100px;
+  height: auto;
+}
+.pearls::after {
+  content: url("./assets/Sample Ceritificate.png");
+  display: block;
+  width: 100px;
+  height: auto;
+} */
+.sample-certificate {
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  margin-right: 20%;
+}
+@media (min-width: 1200px) {
+  .pearls-img {
+    max-width: 200px !important;
+  }
+  .arro-icon {
+    font-size: 4vw !important;
+    color: white;
+  }
+  .tv-img-container {
+    max-width: 77%;
+  }
+}
+.rotate {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden;
+}
+.rotate:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+
+@media (min-width: 800px) {
+  .product-img {
+    min-width: 152px;
+    max-height: 136px;
+  }
+}
+@media (max-width: 768px) {
+  .pearls-img {
+    max-width: 100px;
+  }
+  .certificate-img {
+    max-width: 350px;
+    height: auto;
+  }
+  .fs-banner-head {
+    font-size: clamp(11px, 5vw, 35px);
+  }
+}
+@media (max-width: 576px) {
+  .certificate-img {
+    max-width: 300px;
+    height: auto;
+  }
+  .title-img {
+    max-width: 180px !important;
+    height: 90px !important;
+  }
+  .sample-certificate {
+    max-width: 300px;
+    margin-right: 10%;
+  }
+}
