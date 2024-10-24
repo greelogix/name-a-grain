@@ -1,6 +1,22 @@
 body {
   margin: 0px !important;
 }
+.rotate {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden;
+}
+.rotate:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
 .row {
   --bs-gutter-x: 0 !important;
 }
@@ -20,19 +36,25 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .top-nav {
-  height: 75px;
-  background-color: #00000096;
+  min-height: 75px;
+  background-color: #00000096 !important;
 }
 .top-nav div {
   color: white;
 }
+.slider-container {
+  position: relative;
+  z-index: 2;
+}
 .pearls-container {
-  margin-top: -50px !important;
+  margin-top: -5px !important;
   background-color: #00000026;
   position: relative;
   z-index: 2;
+  box-shadow: 2px 0px 20px 7px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 2px 0px 20px 7px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 2px 0px 20px 7px rgba(0, 0, 0, 0.47);
 }
 .pearls-img {
   max-width: 100%;
@@ -56,15 +78,15 @@ body {
   font-size: clamp(11px, 5vw, 18px) !important;
 }
 .yelllow-border {
-  border: 6px solid #f6cd49 !important;
+  border: 3px solid #f9eaad !important;
   color: #c3812f !important;
 }
 .fs-btn-text {
   font-size: clamp(11px, 5vw, 25px) !important;
 }
 .product-container {
-  border: 2px solid #5a4127;
-  border-radius: 12px;
+  border: 2px solid #920d14;
+  border-radius: 26px;
   padding: 14px;
 }
 .simpson-container {
@@ -84,11 +106,17 @@ body {
 .fs-simpson-head {
   font-size: clamp(11px, 5vw, 23px);
 }
+.fs-simpson-head-desc {
+  font-size: clamp(12px, 5vw, 30px);
+}
 .fs-simpson-text {
   font-size: clamp(11px, 5vw, 18px);
 }
 .fs-banner-head {
   font-size: clamp(11px, 5vw, 58px);
+}
+.fs-slider-simpson {
+  font-size: clamp(11px, 5vw, 40px);
 }
 .fs-head-text {
   font-size: clamp(11px, 5vw, 14px);
@@ -104,7 +132,7 @@ body {
   border-radius: 15px;
 }
 .sub-footer {
-  background-color: #5a4127;
+  background-color: #5a4127cf;
 }
 .title-img {
   max-width: 305px;
@@ -122,25 +150,58 @@ body {
   max-width: 50%;
   height: auto;
 }
-/* .pearls::before {
-  content: url("./assets/Sample Ceritificate.png");
-  display: block;
-  width: 100px;
-  height: auto;
-}
-.pearls::after {
-  content: url("./assets/Sample Ceritificate.png");
-  display: block;
-  width: 100px;
-  height: auto;
-} */
 .sample-certificate {
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
-  position: relative;
   z-index: 0;
-  margin-right: 20%;
+  margin-right: 12%;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
 }
+.banner-container {
+  position: relative;
+}
+.bg-certificate-img {
+  position: absolute;
+  bottom: 0;
+  right: 12%;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.carousel button {
+  z-index: 2;
+}
+.carousel-control-prev {
+    left: auto !important;  
+}
+.carousel-control-next {
+    right: auto !important;  
+}
+.carousel-control-prev2 {
+    left: 0 !important;  
+}
+.carousel-control-next2 {
+    right: 0 !important;  
+}
+.carousel-control-next2, .carousel-control-prev2 {
+    top: 0;
+   bottom: 0;
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 15%;
+   padding: 0;
+   color: #fff;
+   text-align: center;
+   background: 0 0;
+   border: 0;
+   opacity: .5;
+   transition: opacity .15s ease;
+}
+
 @media (min-width: 1200px) {
   .pearls-img {
     max-width: 200px !important;
@@ -153,27 +214,9 @@ body {
     max-width: 77%;
   }
 }
-.rotate {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -moz-transform;
-  -o-transition-property: -o-transform;
-  transition-property: transform;
-  overflow: hidden;
-}
-.rotate:hover {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
-
 @media (min-width: 800px) {
   .product-img {
-    min-width: 152px;
+    min-width: 130px;
     max-height: 136px;
   }
 }
@@ -187,6 +230,10 @@ body {
   }
   .fs-banner-head {
     font-size: clamp(11px, 5vw, 35px);
+  }
+  .sample-certificate {
+    max-width: 300px;
+    margin-right: 10%;
   }
 }
 @media (max-width: 576px) {
@@ -202,4 +249,10 @@ body {
     max-width: 300px;
     margin-right: 10%;
   }
+  .bg-certificate-img {
+    right: 0% !important;
+  }
 }
+
+
+

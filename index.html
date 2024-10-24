@@ -29,64 +29,203 @@
   </head>
   <body>
     <div class="responsive-background">
-      <div class="top-nav d-flex justify-content-end align-items-center">
-        <div class="d-flex justify-content-end align-items-center mx-0 mx-sm-5">
-          <div class="fs-5 mx-3 me-0 me-sm-5">HOME CONTACT LOG</div>
-          <div class="mx-3">
-            <img src="./assets/CART (1).png" width="46px" alt="" />
+      <nav class="navbar navbar-expand-lg top-nav" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse me-5"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <ul class="mb-0 ps-0 d-lg-flex gap-5 me-5">
+              <li class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a
+                  class="nav-link fs-6 fw-bolder text-white"
+                  aria-current="page"
+                  href="#"
+                  >HOME</a
+                >
+              </li>
+              <li class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a
+                  class="nav-link fs-6 fw-bolder text-white"
+                  aria-current="page"
+                  href="#"
+                  >CONTACT</a
+                >
+              </li>
+              <li class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a
+                  class="nav-link fs-6 fw-bolder text-white"
+                  aria-current="page"
+                  href="#"
+                  >BLOG</a
+                >
+              </li>
+              <li class="navbar-nav me-auto mb-2 mb-lg-0">
+                <img
+                  src="./assets/CART (1).png "
+                  class="mt-1"
+                  width="46px"
+                  height="30px"
+                  alt=""
+                />
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class=" mt-4">
+      </nav>
+
+      <div class="mt-4 slider-container">
         <div class="d-flex justify-content-end px-5">
           <img src="./assets/TOP TITLE.png" class="top-img-text" alt="" />
         </div>
-        <div class="row">
-          <div class="col-2 d-flex justify-content-center align-items-center">
-            <i class="fa-solid fa-chevron-left arro-icon"></i>
+        <div class="row justify-content-center banner-container pb-4">
+          <div
+            class="col-2 d-flex justify-content-center align-items-center slider-container"
+          >
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample1"
+              data-bs-slide="prev"
+            >
+              <i class="fa-solid fa-chevron-left arro-icon"></i>
+            </button>
           </div>
           <div
-            class="col-8 flex-md-row d-flex justify-content-center align-items-center"
+            class="col-8 d-flex justifyt-center align-items-center slider-container-conten"
           >
-            <img src="./assets/logo (1) 1.png" class="simp-img" alt="" />
-            <div>
-              <p class="fs-banner-head" style="color: rgba(57, 36, 19, 1)">
-                You Are On a Quest...
-              </p>
-              <p class="fs-head-text">
-                For the perfect gift, for the perfect icebreaker, for the
-                perfect way to respond to an amazing date. Or even for a way to
-                remind someone that you're still holding a grudge – or not! Name
-                a Grain of Sand after that someone. It's an e-card combined with
-                the permanency of celestial nomenclature.
-              </p>
-              <p
-                class="fs-simpson-head mb-0"
-                style="color: rgba(57, 36, 19, 1)"
-              >
-                NameAGrainOfSand.com
-              </p>
-              <p class="fs-simpson-head" style="color: rgba(57, 36, 19, 1)">
-                is the answer to your quest.
-              </p>
-              <button
-                class="btn btn-primary fw-semibold mehron-bg rounded-4 yelllow-border fs-btn-text"
-              >
-                C’mon... TRY IT!
-              </button>
+            <div
+              id="carouselExample1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item z-index-2 active">
+                  <div
+                    class="flex-md-row d-flex justify-content-center align-items-center slider-container"
+                  >
+                    <img
+                      src="./assets/logo (1) 1.png"
+                      class="simp-img d-none d-md-block"
+                      alt=""
+                    />
+                    <div>
+                      <p
+                        class="fs-banner-head time-roman-fs"
+                        style="color: rgba(57, 36, 19, 1)"
+                      >
+                        You Are On a Quest...
+                      </p>
+                      <p class="fs-head-text">
+                        For the perfect gift, for the perfect icebreaker, for
+                        the perfect way to respond to an amazing date. Or even
+                        for a way to remind someone that you're still holding a
+                        grudge – or not! Name a Grain of Sand after that
+                        someone. It's an e-card combined with the permanency of
+                        celestial nomenclature.
+                      </p>
+                      <p
+                        class="fs-simpson-head-desc mb-0 time-roman-fs mb-0"
+                        style="color: rgba(57, 36, 19, 1)"
+                      >
+                        NameAGrainOfSand.com
+                      </p>
+                      <p
+                        class="fs-simpson-head"
+                        style="color: rgba(57, 36, 19, 1)"
+                      >
+                        is the answer to your quest.
+                      </p>
+                      <button
+                        class="btn btn-primary fw-semibold mehron-bg rounded-4 yelllow-border fs-btn-text"
+                      >
+                        C’mon... TRY IT!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item z-index-2">
+                  <div
+                    class="flex-md-row d-flex justify-content-center align-items-center slider-container"
+                  >
+                    <img
+                      src="./assets/logo (1) 1.png"
+                      class="simp-img d-none d-md-block"
+                      alt=""
+                    />
+                    <div>
+                      <p
+                        class="fs-banner-head time-roman-fs"
+                        style="color: rgba(57, 36, 19, 1)"
+                      >
+                        You Are On a Quest...
+                      </p>
+                      <p class="fs-head-text">
+                        For the perfect gift, for the perfect icebreaker, for
+                        the perfect way to respond to an amazing date. Or even
+                        for a way to remind someone that you're still holding a
+                        grudge – or not! Name a Grain of Sand after that
+                        someone. It's an e-card combined with the permanency of
+                        celestial nomenclature.
+                      </p>
+                      <p
+                        class="fs-simpson-head-desc mb-0 time-roman-fs mb-0"
+                        style="color: rgba(57, 36, 19, 1)"
+                      >
+                        NameAGrainOfSand.com
+                      </p>
+                      <p
+                        class="fs-simpson-head"
+                        style="color: rgba(57, 36, 19, 1)"
+                      >
+                        is the answer to your quest.
+                      </p>
+                      <button
+                        class="btn btn-primary fw-semibold mehron-bg rounded-4 yelllow-border fs-btn-text"
+                      >
+                        C’mon... TRY IT!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- <img src="./assets/Dennis Miller.png" class="simp-img" alt="" /> -->
           </div>
-          <div class="col-2 d-flex justify-content-center align-items-center">
-            <i class="fa-solid fa-chevron-right arro-icon"></i>
+          <div
+            class="col-2 d-flex justify-content-center align-items-center slider-container"
+          >
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample1"
+              data-bs-slide="next"
+            >
+              <i class="fa-solid fa-chevron-right arro-icon"></i>
+            </button>
           </div>
         </div>
-      </div>
+        <div class="bg-certificate-img">
+          <img src="./assets/neww.png" class="sample-certificate" alt="" />
+        </div>
+      </div> 
 
       <div class="mb-5 pearls">
-        <div class="d-flex justify-content-end ">
-          <img src="./assets/Sample Ceritificate.png" class="sample-certificate" alt="" />
-        </div>
+        <!-- <div class="d-flex justify-content-end ">
+          <img src="./assets/neww.png" class="sample-certificate" alt="" />
+        </div> -->
         <div class="pearls-container row justify-content-center py-5">
           <div
             class="align-items-center col-6 col-md-2 d-flex flex-column justify-content-between text-center"
@@ -101,7 +240,11 @@
           <div
             class="align-items-center col-6 col-md-2 d-flex flex-column justify-content-between text-center"
           >
-            <img src="./assets/shell_hover.png" class="pearls-img rotate" alt="" />
+            <img
+              src="./assets/shell_hover.png"
+              class="pearls-img rotate"
+              alt=""
+            />
             <p class="fs-5 fw-semibold kefa-fs">HALL OF FAME</p>
           </div>
           <div
@@ -128,7 +271,7 @@
       </div>
       <div class="row justify-content-center my-4">
         <div
-          class="col-12 col-md-5 p-4 d-flex justify-content-center align-items-center"
+          class="col-12 col-md-5 p-4 d-flex justify-content-center align-items-center order-1 order-sm-0"
         >
           <img
             src="./assets/Certificate 2.png"
@@ -139,10 +282,15 @@
         <div
           class="col-10 col-md-5 p-4 d-flex flex-column justify-content-center align-items-center"
         >
-          <p class="fs-1 inter-fs mehron-color align-self-baseline">
+          <p
+            class="fs-1 inter-fs mehron-color align-self-baseline time-roman-fs"
+          >
             Here’s is How It Works
           </p>
-          <p class="fs-text inter-fs pt-2 mb-0">
+          <p
+            class="fs-text inter-fs pt-2 mb-0"
+            style="color: hsl(39deg 89.27% 23.47%)"
+          >
             You can Name a Grain of Sand in someone's honor, and send your Loved
             One, Friend, Frenemy, Team or Office Mate a special message (and do
             it anonymously, if you wish). It's that extra little something to
@@ -347,30 +495,104 @@
       </div>
       <div class="row simpson-container my-4 py-3">
         <div class="col-2 d-flex justify-content-center align-items-center">
-          <i class="fa-solid fa-chevron-left arro-icon"></i>
+          <button
+            class="carousel-control-prev2"
+            type="button"
+            data-bs-target="#carouselExample2"
+            data-bs-slide="prev"
+          >
+            <i class="fa-solid fa-chevron-left arro-icon"></i>
+          </button>
         </div>
-        <div
-          class="col-8 flex-column flex-md-row d-flex justify-content-center align-items-center"
-        >
-          <img src="./assets/Bart.png" class="simp-img" alt="" />
-          <div>
-            <p
-              class="fs-simpson-head fw-semibold time-roman-fs"
-              style="color: rgba(57, 36, 19, 1)"
+        <div class="col-8">
+          <div
+            id="carouselExample2"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="flex-column flex-md-row d-flex justify-content-center align-items-center"
+                >
+                  <img src="./assets/Bart.png" class="simp-img" alt="" />
+                  <div>
+                    <p
+                      class="fs-slider-simpson fw-semibold time-roman-fs"
+                      style="color: rgba(57, 36, 19, 1)"
+                    >
+                      To quote “The Simpsons,”
+                    </p>
+                    <p class="fs-simpson-text text-white">
+                      If only one person in a million finds something funny on
+                      this website, we invoke the Dennis Miller Quotient.
+                    </p>
+                  </div>
+                  <img
+                    src="./assets/Dennis Miller.png"
+                    class="simp-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="flex-column flex-md-row d-flex justify-content-center align-items-center"
+                >
+                  <img src="./assets/Bart.png" class="simp-img" alt="" />
+                  <div>
+                    <p
+                      class="fs-slider-simpson fw-semibold time-roman-fs"
+                      style="color: rgba(57, 36, 19, 1)"
+                    >
+                      To quote “The Simpsons,”
+                    </p>
+                    <p class="fs-simpson-text text-white">
+                      If only one person in a million finds something funny on
+                      this website, we invoke the Dennis Miller Quotient.
+                    </p>
+                  </div>
+                  <img
+                    src="./assets/Dennis Miller.png"
+                    class="simp-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <button
+              class="carousel-control-prev carousel-control-prev2"
+              type="button"
+              data-bs-target="#carouselExample2"
+              data-bs-slide="prev"
+              style="left: 0"
+
             >
-              To quote “The Simpsons,”
-            </p>
-            <p class="fs-simpson-text">
-              If only one person in a million finds something funny on this
-              website, we invoke the Dennis Miller Quotient.
-            </p>
+              <i class="fa-solid fa-chevron-left arro-icon"></i>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next2"
+              type="button"
+              data-bs-target="#carouselExample2"
+              data-bs-slide="next"
+              style="right: 0"
+            >
+              <i class="fa-solid fa-chevron-right arro-icon"></i>
+            </button> -->
           </div>
-          <img src="./assets/Dennis Miller.png" class="simp-img" alt="" />
         </div>
         <div class="col-2 d-flex justify-content-center align-items-center">
-          <i class="fa-solid fa-chevron-right arro-icon"></i>
+          <button
+            class="carousel-control-next2"
+            type="button"
+            data-bs-target="#carouselExample2"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-chevron-right arro-icon"></i>
+          </button>
         </div>
       </div>
+
       <div class="row gap-2 d-flex justify-content-center my-5 p-4 p-sm-0">
         <div class="col-12 col-sm-5 d-flex justify-content-center my-3 my-sm-0">
           <div class="tv-img-container p-2 d-flex justify-content-center">
@@ -414,19 +636,19 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-end me-3">
+        <div class="d-flex justify-content-end me-sm-5 me-2">
           <p class="fs-text text-white">Terms of Service | Privacy Policy</p>
         </div>
       </div>
       <div class="row footer justify-content-between py-4 px-5 bg-dark">
         <div class="col-12 col-sm-8 d-md-flex d-block align-items-center">
-          <p class="text-white px-2">Copyright ©</p>
-          <p class="text-white d-none d-md-block px-2">-</p>
-          <p class="text-white px-2">NameAGrainOfSand.com</p>
-          <p class="text-white d-none d-md-block px-2">-</p>
-          <p class="text-white px-2">All rights Reserved</p>
+          <p class="text-white px-2 mb-0">Copyright ©</p>
+          <p class="text-white d-none d-md-block px-2 mb-0">-</p>
+          <p class="text-white px-2 mb-0">NameAGrainOfSand.com</p>
+          <p class="text-white d-none d-md-block px-2 mb-0">-</p>
+          <p class="text-white px-2 mb-0">All rights Reserved</p>
         </div>
-        <div class="col-12 col-sm-4 d-flex justify-content-sm-end">
+        <div class="col-12 col-sm-4 d-flex justify-content-sm-end mt-3 mt-sm-0">
           <img
             src="./assets/Instagram_icon.png"
             class="mx-2 social-icons"
